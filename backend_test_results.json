@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-01-24T17:53:35.053760",
+  "total_tests": 5,
+  "passed_tests": 5,
+  "success_rate": "100.0%",
+  "results": [
+    {
+      "test": "Root Endpoint",
+      "success": true,
+      "details": "Status: 200, Message: AI Tender Guardian API"
+    },
+    {
+      "test": "Seal Bid",
+      "success": true,
+      "details": "Status: 200, BidHash: 0e8296badd75288480e3..., BidderId: 8c695603..."
+    },
+    {
+      "test": "AI Compliance Check",
+      "success": true,
+      "details": "Status: 200, Analysis length: 794 chars, Violations: 4"
+    },
+    {
+      "test": "Tender Update (n8n webhook)",
+      "success": true,
+      "details": "Status: 200, UpdateHash: 1d761a9967e6198051ba..., Timestamp: 2026-01-24T17:53:35.003233+00:00"
+    },
+    {
+      "test": "Audit Log",
+      "success": true,
+      "details": "Status: 200, Entries: 1, Test bid found: True, Structure valid"
+    }
+  ]
+}
