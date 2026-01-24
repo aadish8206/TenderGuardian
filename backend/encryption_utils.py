@@ -19,7 +19,7 @@ def encrypt_file_content(file_content: bytes) -> tuple[bytes, bytes]:
     iv = get_random_bytes(16)  # AES block size
     cipher = AES.new(key, AES.MODE_CBC, iv)
     
-    # Pad content to AES block size
+    # Pad content to AES block sizes
     padded_content = pad(file_content, AES.block_size)
     encrypted_content = cipher.encrypt(padded_content)
     
